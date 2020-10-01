@@ -233,6 +233,8 @@ footer {
     timer = setTimeout(function () {
       card.setAttribute('class', 'open-fully');
       timer = null;
+      var music = document.querySelector("audio");
+      music.play();
     }, 1000);
   });
 
@@ -242,19 +244,21 @@ footer {
     timer = setTimeout(function () {
       card.setAttribute('class', '');
       timer = null;
+      var music = document.querySelector("audio");
+      music.pause();
     }, 1000);
   });
 
 }());
 
-  </script>
+</script>
 
-<div style="visibility: hidden;">
-<embed src="./assets/bday.mp3" autostart="true" loop="true">
+<div style="visibility:hidden">
+  <audio loop>
+      <source src="./assets/bday.mp3" type="audio/mpeg">
+  </audio> 
 </div>
-<div style="visibility: hidden;">
-<embed src="./assets/bday.mp3" autostart="true" loop="true">
-</div>
+
 
   </body>
   </html>
