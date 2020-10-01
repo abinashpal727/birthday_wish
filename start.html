@@ -24,14 +24,28 @@ canvas {
 }
 </style>
 <body>
-	<audio autoplay loop>
-		<source src="./assets/bday.mp3">
-  	</audio>
+	<div style="visibility:hidden">
+		<audio loop>
+			<source src="./assets/fireworks.mp3" type="audio/mpeg">
+		</audio> 
+	</div>
 	<!-- setup our canvas element -->
 	<canvas id="canvas">Canvas is not supported in your browser.</canvas>
 	<script>
 		setTimeout("location.href = 'Birthday.html';",20000);
 	</script>
 	<script type="text/javascript" src="./javascript/fireworks.js"></script>
+	<script>
+		var firstTime = true;
+		var body = document.querySelector("body");
+		body.addEventListener("click",function(){
+			if(firstTime){
+				firstTime = false;
+				var music = document.querySelector("audio");
+      			music.play();
+			}
+		})
+	</script>
+
 </body>
 </html>
