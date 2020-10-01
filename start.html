@@ -24,14 +24,14 @@ canvas {
 }
 </style>
 <body>
-<div style="visibility: hidden;">
-<embed src="./assets/fireworks.mp3" autostart="true" loop="true">
-</div>   
-<!-- setup our canvas element -->
-<canvas id="canvas">Canvas is not supported in your browser.</canvas>
-<script>
-setTimeout("location.href = 'Birthday.html';",20000);
-</script>
-<script type="text/javascript" src="./javascript/fireworks.js"></script>
+	<audio autoplay loop>
+		<source src="./assets/bday.mp3">
+  	</audio>
+	<!-- setup our canvas element -->
+	<canvas id="canvas">Canvas is not supported in your browser.</canvas>
+	<script>
+		setTimeout("location.href = 'Birthday.html';",20000);
+	</script>
+	<script type="text/javascript" src="./javascript/fireworks.js"></script>
 </body>
 </html>
