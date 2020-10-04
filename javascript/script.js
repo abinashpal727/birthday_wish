@@ -1,6 +1,7 @@
-var a=prompt("Enter UserName");
- var b=prompt("Enter password");
-  	if(a== "username"&& b=="password")
+function authenticate(){
+	var uname = document.querySelector("#username").value;
+	var pass = document.querySelector("#password").value;
+	if(uname== "username"&& pass=="password")
   	{
   	    window.location.href="start.html";
   	}
@@ -8,5 +9,5 @@ var a=prompt("Enter UserName");
   	{
   		alert("invalid details");
   		window.location.href="index.html";
-  	}
-  	
+  	}	
+};
